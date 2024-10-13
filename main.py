@@ -1,3 +1,11 @@
+'''
+author: Jack
+Date: 2024-10-12 19:10:56
+LastEditors: Jack
+LastEditTime: 2024-10-13 08:31:48
+Description: 
+
+'''
 import requests, json, re, os
 
 session = requests.session()
@@ -38,6 +46,7 @@ data = {
 }
 try:
     print('进行登录...')
+    print('推送数据异常 email={0} passwd={1},SCKEY={2}'.format(email, passwd, SCKEY))
     response = json.loads(session.post(url=login_url,headers=header,data=data).text)
     print(response['msg'])
     # 获取账号名称
