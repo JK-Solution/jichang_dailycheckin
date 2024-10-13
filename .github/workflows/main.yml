@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  RUN_ENV: 'prod'
+  RUN_ENV: 'ikuuu签到'
 
 jobs:
   build:
